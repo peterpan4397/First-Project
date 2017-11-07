@@ -1,0 +1,54 @@
+@font-face {
+    font-family: fontAwesome;
+    src: url("font/fontawesome-webfont.woff");
+}
+
+.wrapper
+{
+	margin-left: 6.65%;
+	margin-right: 6%;
+}
+
+
+#headerBar
+{
+	background: #3478e3;
+	color: #ffffff;
+	width: 100%;
+}
+
+#headerBar .headerItem
+{
+	display: inline-block;
+	height: auto;
+	font-size: 13.9px;
+	padding: 14px 30px 14px 0;
+
+}
+#headerBar #headerItem1
+{
+border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#headerBar #headerItem1:before
+{
+	content: "\f003";
+	font-family: fontAwesome;
+	font-size: 15px;
+	padding-right: 15px;
+}
+
+#headerBar #headerItem2:before
+{
+	content: "\f095";
+	font-family: fontAwesome;
+	font-size: 15px;
+	padding-left:26px;
+	padding-right: 15px;
+
+}
+
+#headerBar #headerItem3
+{
+	float:right;
+}

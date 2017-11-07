@@ -1,0 +1,51 @@
+jQuery( document ).ready( function($) {
+	$(document).on ( 'click', '.btn_loadmore_grid_portfolio', function( event ) { 
+		event.preventDefault();
+		var post_type = 'portfolio'; 
+		//var offset_begin = $('.wd-portfolio-content .wd-wrap-content-item').length;
+		var _this 						= $(this);
+		var select_content_item_parent  = $(this).parents('.wd-wrapper-special-grid');
+		var select_content_item 		= select_content_item_parent.find('.wd-portfolio-content');
+		var offset_begin 				= select_content_item.children().length;
+		
+		var offset = offset_begin;
+		var posts_per_page 					= document.getElementById('tvlgiao_blog_number_loadmore').value;
+		var tvlgiao_id_category 			= select_content_item_parent.find('#tvlgiao_blog_id_category').val();
+
+		var tvlgiao_data_show 				= document.getElementById('tvlgiao_blog_data_show').value;
+		var tvlgiao_columns 				= document.getElementById('tvlgiao_blog_columns').value;
+		var tvlgiao_style	 				= document.getElementById('tvlgiao_blog_show_style').value;
+		
+		$.ajax({
+			url: portfolio_gird_ajax_object.ajax_url_portfolio_gird,
+			type: 'post',
+			data: {
+				action: 'load_more_portfolio_gird',
+				query_vars: ajax_object.query_vars,
+				offset:offset, 
+				post_type:post_type,
+				posts_per_page:posts_per_page,
+				category_id: tvlgiao_id_category,
+				data_show: tvlgiao_data_show,
+				columns : tvlgiao_columns,
+				style: tvlgiao_style,
+			},
+
+			beforeSend: function(data) {
+				$("#show_image_loading").css({ display: "block" });
+			},
+			success: function( response ) {
+				
+				$("#show_image_loading").css({ display: "none" });
+				select_content_item.append(response);
+				if (document.getElementById('tvlgiao_have_post') !=null) {
+					var wd_status = select_content_item_parent.find('#tvlgiao_have_post').val();
+					if(wd_status == 1){
+						_this.removeClass('btn_loadmore_product').addClass('btn_end_load_more').html('END OF POSTS');
+					}
+				}
+
+			}
+		});
+	});
+});
