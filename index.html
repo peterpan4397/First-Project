@@ -5,36 +5,57 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--<link href="https://fonts.googleapis.com/css?family=" rel="stylesheet">-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="icon" type="image/png" href="img/icon.png" />
-	<link rel="stylesheet" href="css/reset.css" media="screen" \>
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css" media="screen"\>
 	<link rel="stylesheet" href="css/bootstrap.min.css" media="screen"\>
+	<link rel="stylesheet" href="css/reset.css" media="screen" \>
 	<link rel="stylesheet" href="css/style.css" media="screen" \>
 	
 </head>
 <body>
 	<!--Header-->
 	<header>
-		<div id="headerBar">
+		<!--Top Header-->
+		<div id="topHeader">
 			<ul class="wrapper">
-				<li class="headerItem" id="headerItem1">support@wpdance.com</li>
-				<li class="headerItem" id="headerItem2">+84 866 725 048</li>
+				<li class="headerItem" id="headerItem1">
+					<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					support@wpdance.com
+				</li>
+				<li class="headerItem" id="headerItem2">
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					+84 866 725 048
+				</li>
 				<li class="headerItem" id="headerItem3">Sign Up / Login</li>
 			</ul>
 		</div>
-		<div class="row wrapper" id="mainHeader">
-			<div class="col-lg-8">
-				<img src="img/logo.png" alt="WIRAM">
+		<!--End of Top Header-->
+		<!--Bottom Header-->
+		<div class="wrapper">
+			<div id="logo">
+				<img src="img/logo.png" alt="logo">
 			</div>
-			<div class="col-lg-2">
-				<p>FREE RETURN</p>
-				<p>All order over $50</p>
-			</div>
-			<div class="col-lg-2">
-				<p>FREE SHIPPING</p>
-				<p>All order over $50</p>
-			</div>
+			<ul id="botHeader">
+				<li class="botHeaderItem">
+					<i class="fa fa-money botHeaderIcon" aria-hidden="true"></i>
+					<div class="botHeaderContent">
+						<h3>FREE RETURN</h3>
+						<p>All order over $50</p> 
+					</div>
+				</li>
+				<li class="botHeaderItem">
+					<i class="fa fa-truck botHeaderIcon" aria-hidden="true"></i>
+					<div class="botHeaderContent">
+						<h3>FREE SHIPPING</h3>
+						<p>All order over $50</p> 
+					</div>
+				</li>
+			</ul>
+			
 		</div>
+		<div style="clear:both"></div>
+		<!--End of Bottom Header-->
 	</header>
 	<!--End of Header-->
 	
