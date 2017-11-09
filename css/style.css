@@ -1,54 +1,103 @@
+
+/*********************************************Font*********************************************/
 @font-face {
-    font-family: fontAwesome;
-    src: url("font/fontawesome-webfont.woff");
+	font-family: helvetiNeue;
+	src: url("font/HelveticaNeue.woff");
 }
 
+
+/*********************************************General*********************************************/
 .wrapper
 {
-	margin-left: 6.65%;
-	margin-right: 6%;
+	margin-left: 6.67%;
+	margin-right: 5.67%;
 }
 
+body
+{
+	font-family: "helvetiNeue";
 
-#headerBar
+}
+
+/*********************************************Header*********************************************/
+/*-----------------Top Header-------------*/
+#topHeader
 {
 	background: #3478e3;
 	color: #ffffff;
 	width: 100%;
 }
 
-#headerBar .headerItem
+#topHeader .headerItem
 {
 	display: inline-block;
 	height: auto;
-	font-size: 13.9px;
-	padding: 14px 30px 14px 0;
+	font-size: 13.5px;
+	padding: 17px 32px 18px 0;
 
 }
-#headerBar #headerItem1
+#topHeader #headerItem1
 {
-border-right: 1px solid rgba(255, 255, 255, 0.1);
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
-
-#headerBar #headerItem1:before
+#topHeader #headerItem1 i
 {
-	content: "\f003";
-	font-family: fontAwesome;
 	font-size: 15px;
-	padding-right: 15px;
+	padding-right: 11px;
 }
-
-#headerBar #headerItem2:before
+#topHeader #headerItem2 i
 {
-	content: "\f095";
-	font-family: fontAwesome;
 	font-size: 15px;
 	padding-left:26px;
-	padding-right: 15px;
-
+	padding-right: 11px;
 }
-
-#headerBar #headerItem3
+#topHeader #headerItem3
 {
 	float:right;
 }
+/*-----------------Bottom Header-------------*/
+#logo
+{
+	width: 55.5%;
+	padding-top: 22px;
+	float: left;
+}
+#botHeader
+{
+	float:left;
+}
+#botHeader li
+{
+	display: inline-block;
+}
+.botHeaderItem
+{
+	width: auto;
+	padding-top: 22px;
+	margin-left: 80px;
+}
+.botHeaderIcon
+{
+	float:left;
+	width:40px;
+	height: 40px;
+	padding:10px;
+	border-radius: 40px;
+	border: 1px solid #3478e3;
+	margin-right: 25px;
+}
+.botHeaderContent
+{
+	float:left;
+}
+.botHeaderItem h3
+{
+	font-weight: bold;
+	font-size: 14px;
+}
+.botHeaderItem p
+{
+	margin-top: 10px;
+	font-size: 13px;
+}
+/*-----------------Navigation Bar-------------*/
