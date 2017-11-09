@@ -105,21 +105,22 @@ body
 #navBar
 {
 	font-size: 15px;
-	border-top: 0.5px solid rgba(63, 63, 63, 0.1);
-	border-bottom: 0.5px solid rgba(63, 63, 63, 0.1);
+	border-top: 0.5px solid rgba(63, 63, 63, 0.2);
+	border-bottom: 0.5px solid rgba(63, 63, 63, 0.2);
 
 }
 #leftNavBar li
 {
 	display: inline-block;
-	padding: 9px 56px 16px 0;
+	padding: 10px 56px 13px 0;
 	text-shadow: 1px 0 rgba(63, 63, 63, 0.2);
 	color:rgba(63, 63, 63, 0.8);
 }
 /*******This is weird**********/
 #navBar ul a:nth-child(8) li
 {
-	padding: 9px 0 15px 0;
+	padding-right: 0px;
+	color:black;
 }
 #leftNavBar li:after
 {
@@ -136,10 +137,10 @@ body
 }
 #rightNavBar
 {
-	color:black;
+	
 	margin-left:273px;
 	width: auto;
-	padding-right: 0;
+	font-size: 14px;
 }
 #rightNavBar:after
 {
@@ -166,3 +167,5 @@ body
 	padding-top: 4.5px;
 	margin-left: 10px;
 }
+/*********************************************Header*********************************************/
+/*-----------------Top Header-------------*/
