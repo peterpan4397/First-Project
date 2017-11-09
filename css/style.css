@@ -59,7 +59,8 @@ body
 #logo
 {
 	width: 55.5%;
-	padding-top: 22px;
+	padding-top: 34px;
+	padding-bottom: 28px;
 	float: left;
 }
 #botHeader
@@ -81,7 +82,7 @@ body
 	float:left;
 	width:40px;
 	height: 40px;
-	padding:10px;
+	padding: 12px;
 	border-radius: 40px;
 	border: 1px solid #3478e3;
 	margin-right: 25px;
@@ -90,7 +91,7 @@ body
 {
 	float:left;
 }
-.botHeaderItem h3
+.botHeaderItem a
 {
 	font-weight: bold;
 	font-size: 14px;
@@ -101,3 +102,67 @@ body
 	font-size: 13px;
 }
 /*-----------------Navigation Bar-------------*/
+#navBar
+{
+	font-size: 15px;
+	border-top: 0.5px solid rgba(63, 63, 63, 0.1);
+	border-bottom: 0.5px solid rgba(63, 63, 63, 0.1);
+
+}
+#leftNavBar li
+{
+	display: inline-block;
+	padding: 9px 56px 16px 0;
+	text-shadow: 1px 0 rgba(63, 63, 63, 0.2);
+	color:rgba(63, 63, 63, 0.8);
+}
+/*******This is weird**********/
+#navBar ul a:nth-child(8) li
+{
+	padding: 9px 0 15px 0;
+}
+#leftNavBar li:after
+{
+	content: ' ';
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	border-top: 1px solid rgba(63, 63, 63, 0.8);
+	border-right: 1px solid rgba(63, 63, 63, 0.8);
+	box-shadow: 1px 0 rgba(63, 63, 63, 0.2);
+	margin-top: 4px;
+	margin-left: 13px;
+	transform: rotate(135deg);
+}
+#rightNavBar
+{
+	color:black;
+	margin-left:273px;
+	width: auto;
+	padding-right: 0;
+}
+#rightNavBar:after
+{
+	display:none;
+}
+#search, #shopping i
+{
+	display: inline-block;
+}
+#shopping
+{
+	display: inline-block;
+	margin-left: 23px;
+}
+#nItem
+{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	border-radius: 24px;
+	background: #3478e3;
+	color:white;
+	text-align: center;
+	padding-top: 4.5px;
+	margin-left: 10px;
+}
