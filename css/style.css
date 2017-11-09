@@ -167,5 +167,56 @@ body
 	padding-top: 4.5px;
 	margin-left: 10px;
 }
-/*********************************************Header*********************************************/
-/*-----------------Top Header-------------*/
+/*********************************************Body*********************************************/
+/*-----------------Grid View Title-------------*/
+#gridViewTitle
+{
+	background: #eeeeee;
+	height:100px;
+	color:rgba(63, 63, 63, 1);
+	text-shadow: 1px 0 rgba(63, 63, 63, 0.2);
+
+}
+
+#gridViewTitle ul
+{
+	display: inline-block;
+	margin-left: 815px;
+}
+
+#gridViewTitle h3
+{
+	padding-top: 42px;
+	display: inline-block;
+	
+	font-size: 15px;
+}
+
+#gridViewTitle ul li
+{
+	display: inline-block;
+	font-size: 14px;
+	color:rgba(63, 63, 63, 0.6);
+	margin-right: 8px;
+
+}
+
+#gridViewTitle ul li:last-child:after
+{
+	display: none;
+
+}
+
+#gridViewTitle ul li:after
+{
+	content:' ';
+	position:absolute;
+	width: 6px;
+	height: 6px;
+	border-top: 1px solid rgba(63, 63, 63, 0.6);
+	border-right: 1px solid rgba(63, 63, 63, 0.6);
+	transform: rotate(45deg);
+	margin-top: 5px;
+	margin-left: 2px;
+
+}
