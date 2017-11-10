@@ -4,8 +4,6 @@
 	font-family: helvetiNeue;
 	src: url("font/HelveticaNeue.woff");
 }
-
-
 /*********************************************General*********************************************/
 .wrapper
 {
@@ -16,9 +14,13 @@
 body
 {
 	font-family: "helvetiNeue";
-
+	position: relative;
 }
-
+body::after {
+	content: '';
+	display: block;
+	height: 524px;
+}
 /*********************************************Header*********************************************/
 /*-----------------Top Header-------------*/
 #topHeader
@@ -380,4 +382,141 @@ body
 	padding: 15.5px auto;
 	text-align: center;
 	text-shadow: 1px 0 rgba(255, 255, 255, 0.3);
+}
+/*********************************************Footer*********************************************/
+/*-----------------Left Column-------------*/
+#footer
+{
+	background: rgb(35,40,45);
+	font-family: "Segoe UI", sans-serif;
+	position: absolute;
+	bottom: 0
+}
+
+#leftCol
+{
+	padding: 82px 15px 0 15px;
+}
+
+#leftCol img
+{
+	margin-bottom: 38px;
+}
+
+#leftCol p
+{
+	font-size: 14px;
+	color: rgb(158, 158, 158);
+	line-height: 24.5px;
+	margin-bottom: 32px;
+}
+#contact i 
+{
+	display: inline-block;
+	color: white;
+	width: 37px;
+	height: 37px;
+	border-radius: 0.3rem;
+	background: rgb(53, 61, 68);
+	text-align:center;
+	font-size: 16px;
+	padding-top: 9.5px;
+}
+
+#midCol
+{
+	padding-top:88px;
+}
+
+#midCol h2, #rightCol h2
+{
+	font-size: 15px;
+	font-weight: bold;
+	color:white;
+	margin-bottom: 43px;
+}
+#midCol li
+{
+	font-size: 14px;
+	color: rgb(158, 158, 158);
+	line-height: 24.5px;
+}
+
+#rightCol
+{
+	padding:88px 15px 0 30px;
+	color:white;
+}
+#rightCol p
+{
+	font-size: 13px;
+	margin-bottom: 32px;
+}
+
+#emailForm
+{
+	width: 96%;
+	height: 50px;
+	background: rgb(53, 61, 68);
+	border-width: 0;
+	border-radius: 0.1rem;
+	padding: 20px 15px 20px 15px;
+	font-size: 14px;
+	color: white;
+}
+#emailForm:focus
+{
+	outline: none;
+}
+
+#emailForm::placeholder
+{
+	color:white;
+}
+
+
+#submitButton
+{
+	position: absolute;
+	top:206px;
+	right:40px;
+	background: transparent;
+	border:none;
+	color:rgb(52,120,227);
+
+}
+
+#copyright p
+{
+	color: white;
+	text-shadow: 0.5px 0 white; 
+	font-size: 14px;
+	margin-top: 42px;
+	margin-bottom: 38px;
+	padding-top: 46px;
+	border-top: 1px solid rgb(53, 61, 68);
+}
+
+
+#payment ul
+{
+	border-top: 1px solid rgb(53, 61, 68);
+	margin-top:42px;
+	padding-right: 0px;
+	width: 100%;
+	display: block;
+}
+
+
+#payment ul li
+{
+	display: inline-block;
+	margin-top:42px;
+	font-size: 14px;
+	color: rgb(158, 158, 158);
+}
+
+#payment ul a:first-child li
+{
+	margin-left: 184px;
 }
