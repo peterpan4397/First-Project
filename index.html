@@ -15,91 +15,92 @@
 </head>
 <body>
 	<!--Header-->
-		<!--Top Header-->
-		<div id="topHeader">
-			<ul class="wrapper">
-				<li class="headerItem" id="headerItem1">
-					<i class="fa fa-envelope-o" aria-hidden="true"></i>
-					support@wpdance.com
-				</li>
-				<li class="headerItem" id="headerItem2">
-					<i class="fa fa-phone" aria-hidden="true"></i>
-					+84 866 725 048
-				</li>
-				<li class="headerItem" id="headerItem3">Sign Up / Login</li>
-			</ul>
+	<!--Top Header-->
+	<div id="topHeader">
+		<ul class="wrapper">
+			<li class="headerItem" id="headerItem1">
+				<i class="fa fa-envelope-o" aria-hidden="true"></i>
+				support@wpdance.com
+			</li>
+			<li class="headerItem" id="headerItem2">
+				<i class="fa fa-phone" aria-hidden="true"></i>
+				+84 866 725 048
+			</li>
+			<li class="headerItem" id="headerItem3">Sign Up / Login</li>
+		</ul>
+	</div>
+	<!--End of Top Header-->
+	<!--Bottom Header-->
+	<div class="wrapper">
+		<div id="logo">
+			<img src="img/logo.png" alt="logo">
 		</div>
-		<!--End of Top Header-->
-		<!--Bottom Header-->
+		<ul id="botHeader">
+			<li class="botHeaderItem">
+				<a href="#">
+					<i class="fa fa-money botHeaderIcon" aria-hidden="true"></i>
+				</a>
+				<div class="botHeaderContent">
+					<a href=#>FREE RETURN</a>
+					<p>All order over $50</p> 
+				</div>
+			</li>
+			<li class="botHeaderItem">
+				<a href="#">
+					<i class="fa fa-truck botHeaderIcon" aria-hidden="true"></i>
+				</a>
+				<div class="botHeaderContent">
+					<a href=#>FREE SHIPPING</a>
+					<p>All order over $50</p> 
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div style="clear:both"></div>
+	<!--End of Bottom Header-->
+	<!--Navigation Bar-->
+	<div id="navBar">
 		<div class="wrapper">
-			<div id="logo">
-				<img src="img/logo.png" alt="logo">
-			</div>
-			<ul id="botHeader">
-				<li class="botHeaderItem">
-					<a href="#">
-						<i class="fa fa-money botHeaderIcon" aria-hidden="true"></i>
-					</a>
-					<div class="botHeaderContent">
-						<a href=#>FREE RETURN</a>
-						<p>All order over $50</p> 
-					</div>
-				</li>
-				<li class="botHeaderItem">
-					<a href="#">
-						<i class="fa fa-truck botHeaderIcon" aria-hidden="true"></i>
-					</a>
-					<div class="botHeaderContent">
-						<a href=#>FREE SHIPPING</a>
-						<p>All order over $50</p> 
-					</div>
-				</li>
+			<ul id="leftNavBar">
+				<a href=#>
+					<li>Home</li>
+				</a>
+				<a href=#>
+					<li>Shop</li>
+				</a>
+				<a href=#>
+					<li>Blog</li>
+				</a>
+				<a href=#>
+					<li>Template Page</li>
+				</a>
+				<a href=#>
+					<li>Categories</li>
+				</a>
+				<a href=#>
+					<li>Pages</li>
+				</a>
+				<a href=#>
+					<li>Portfolio</li>
+				</a>
+				<a href="#">
+					<li id="rightNavBar">
+						<div id="search" class="fa fa-search">
+						</div>
+						<div id="shopping">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							<div id="nItem">0</div>
+						</div>
+					</li>
+				</a>
 			</ul>
-		</div>
-		<div style="clear:both"></div>
-		<!--End of Bottom Header-->
-		<!--Navigation Bar-->
-		<div id="navBar">
-			<div class="wrapper">
-				<ul id="leftNavBar">
-					<a href=#>
-						<li>Home</li>
-					</a>
-					<a href=#>
-						<li>Shop</li>
-					</a>
-					<a href=#>
-						<li>Blog</li>
-					</a>
-					<a href=#>
-						<li>Template Page</li>
-					</a>
-					<a href=#>
-						<li>Categories</li>
-					</a>
-					<a href=#>
-						<li>Pages</li>
-					</a>
-					<a href=#>
-						<li>Portfolio</li>
-					</a>
-					<a href="#">
-						<li id="rightNavBar">
-							<div id="search" class="fa fa-search">
-							</div>
-							<div id="shopping">
-								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-								<div id="nItem">0</div>
-							</div>
-						</li>
-					</a>
-				</ul>
-				
-			</div>	
-		</div>
-		<!--End of Navigation Bar-->
+
+		</div>	
+	</div>
+	<!--End of Navigation Bar-->
 	<!--End of Header-->
 	<!--Body-->
+	<!--Grid View Title-->
 	<div id="gridViewTitle">
 		<div class="wrapper">
 			<h3>BLOG GRID VIEW</h3>
@@ -110,8 +111,225 @@
 			</ul>
 		</div>
 	</div>
-	<!--End of Body-->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+	<!--End of Grid View Title-->
+	<!--Grid View Content-->
+	<div id="gridViewContent">
+		<div class="wrapper row">
+			<div class="col-lg-4">
+				<div class="gridViewPost firstCol">
+					<img src="img/thumbnail1.jpg" alt="It's a bike">
+					<div class="gridViewPostContent">
+						<h2>Lorem ipsum dolor sit amet</h2>
+						<ul>
+							<li>by admin</li>
+							<li>in Photography</li>
+						</ul>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus lorem vel urna ultricies, ut suscipit sem aliquet. Donec at...</p>
+						<a href="#">
+							<div class="readMore"><div></div></div>
+							<p>Read More</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="gridViewPost secondCol">
+					<img src="img/thumbnail2.jpg" alt="It's a bike">
+					<div class="gridViewPostContent">
+						<h2>Morbi luctus laoreet ante a consequat</h2>
+						<ul>
+							<li>by admin</li>
+							<li>in Photography</li>
+						</ul>
+						<p>Integer eu mi et magna suscipit consequat cursus et nisl. Sed sollicitudin in lectus sit amet pellentesque. Aliquam sodales ipsum...</p>
+						<a href="#">
+							<div class="readMore"><div></div></div>
+							<p>Read More</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="gridViewPost thirdCol">
+					<img src="img/thumbnail3.jpg" alt="It's a bike">
+					<div class="gridViewPostContent">
+						<h2>Nullam dignissim arcu id lorem suscipit</h2>
+						<ul>
+							<li>by admin</li>
+							<li>in Uncategorized</li>
+						</ul>
+						<p>Integer eu mi et magna suscipit consequat cursus et nisl. Sed sollicitudin in lectus sit amet pellentesque. Aliquam sodales ipsum...</p>
+						<a href="#">
+							<div class="readMore"><div></div></div>
+							<p>Read More</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--**************************************************************************************************************************-->
+		<div class="wrapper row">
+			<div class="col-lg-4">
+				<div class="gridViewPost firstCol">
+					<img src="img/thumbnail4.jpg" alt="It's a bike">
+					<div class="gridViewPostContent">
+						<h2>Phasellus luctus auctor metus in imperdiet</h2>
+						<ul>
+							<li>by admin</li>
+							<li>in design</li>
+						</ul>
+						<p>Integer eu mi et magna suscipit consequat cursus et nisl. Sed sollicitudin in lectus sit amet pellentesque. Aliquam sodales ipsum...</p>
+						<a href="#">
+							<div class="readMore"><div></div></div>
+							<p>Read More</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="gridViewPost secondCol">
+					<img src="img/thumbnail5.jpg" alt="It's a bike">
+					<div class="gridViewPostContent">
+						<h2>Donec congue at nisl eu volutpat</h2>
+						<ul>
+							<li>by admin</li>
+							<li>in design</li>
+						</ul>
+						<p>Integer eu mi et magna suscipit consequat cursus et nisl. Sed sollicitudin in lectus sit amet pellentesque. Aliquam sodales ipsum...</p>
+						<a href="#">
+							<div class="readMore"><div></div></div>
+							<p>Read More</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="gridViewPost thirdCol">
+					<img src="img/thumbnail6.jpg" alt="It's a bike">
+					<div class="gridViewPostContent">
+						<h2>Suspendisse egestas vulputate mi</h2>
+						<ul>
+							<li>by admin</li>
+							<li>in design</li>
+						</ul>
+						<p>Integer eu mi et magna suscipit consequat cursus et nisl. Sed sollicitudin in lectus sit amet pellentesque. Aliquam sodales ipsum...</p>
+						<a href="#">
+							<div class="readMore"><div></div></div>
+							<p>Read More</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--**************************************************************************************************************************-->
+		<div class="wrapper row">
+			<div class="col-lg-4">
+				<div class="gridViewPost firstCol">
+					<img src="img/thumbnail7.jpg" alt="It's a bike">
+					<div class="gridViewPostContent">
+						<h2>Cum sociis natoque penatibus et magnis</h2>
+						<ul>
+							<li>by admin</li>
+							<li>in design</li>
+						</ul>
+						<p>Integer eu mi et magna suscipit consequat cursus et nisl. Sed sollicitudin in lectus sit amet pellentesque. Aliquam sodales ipsum...</p>
+						<a href="#">
+							<div class="readMore"><div></div></div>
+							<p>Read More</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="gridViewPost secondCol">
+					<img src="img/thumbnail8.jpg" alt="It's a bike">
+					<div class="gridViewPostContent">
+						<h2>Sed sollicitudin in lectus sit amet pellentesque</h2>
+						<ul>
+							<li>by admin</li>
+							<li>in design</li>
+						</ul>
+						<p>Integer eu mi et magna suscipit consequat cursus et nisl. Sed sollicitudin in lectus sit amet pellentesque. Aliquam sodales ipsum...</p>
+						<a href="#">
+							<div class="readMore"><div></div></div>
+							<p>Read More</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="gridViewPost thirdCol">
+					<img src="img/thumbnail9.jpg" alt="It's a bike">
+					<div class="gridViewPostContent">
+						<h2>Integer facilisis erat ut justo malesuada</h2>
+						<ul>
+							<li>by admin</li>
+							<li>in design</li>
+						</ul>
+						<p>Integer eu mi et magna suscipit consequat cursus et nisl. Sed sollicitudin in lectus sit amet pellentesque. Aliquam sodales ipsum...</p>
+						<a href="#">
+							<div class="readMore"><div></div></div>
+							<p>Read More</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--**************************************************************************************************************************-->
+		<div class="wrapper row">
+			<div class="col-lg-4">
+				<div class="gridViewPost firstCol">
+					<img src="img/thumbnail10.jpg" alt="It's a bike">
+					<div class="gridViewPostContent">
+						<h2>Quisque Condimentum Nisl Arcu</h2>
+						<ul>
+							<li>by admin</li>
+							<li>in Photography</li>
+						</ul>
+						<p>Integer eu mi et magna suscipit consequat cursus et nisl. Sed sollicitudin in lectus sit amet pellentesque. Aliquam sodales ipsum...</p>
+						<a href="#">
+							<div class="readMore"><div></div></div>
+							<p>Read More</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="gridViewPost secondCol">
+					<img src="img/thumbnail11.jpg" alt="It's a bike">
+					<div class="gridViewPostContent">
+						<h2>Neque Porro Quisquam Est Qui Dolorem Ipsum</h2>
+						<ul>
+							<li>by admin</li>
+							<li>in design</li>
+						</ul>
+						<p>Praesent lobortis nulla sodales dapibus laoreet. Mauris ultrices aliquam tellus sed auctor. Nam auctor gravida turpis, a hendrerit turpis. Mauris...</p>
+						<a href="#">
+							<div class="readMore"><div></div></div>
+							<p>Read More</p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="gridViewPost thirdCol" id="blockQuote">
+					<i class="fa fa-quote-left" aria-hidden="true"></i>
+					<p id="quoteContent">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur faucibus lorem vel urna ultricies, ut suscipit sem aliquet. Donec at libero tincidunt, cursus elit vel, interdum ante.
+					</p>
+					<p id="quoteCredit">Admin</p>
+					<a href="#">
+						<div>
+							<div class="readMore"><div></div></div>
+							<p>Read More</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--End of Grid View Content-->
+		<!--End of Body-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
+	</html>
