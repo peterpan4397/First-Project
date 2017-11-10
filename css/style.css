@@ -233,15 +233,16 @@ body
 
 }
 
-#firstCol
+.firstCol
 {
 	margin-left: -15px;
+
 }
-#secondCol
+.secondCol
 {
 	margin-left: -7.5px;
 }
-#thirdCol
+.thirdCol
 {
 	margin-left: 15px;
 }
@@ -260,6 +261,7 @@ body
 	font-family: "Segoe UI", sans-serif;
 	padding: 27px 30px 0 30px;
 	font-size: 20px;
+	line-height: 28px;
 	color:rgb(63, 65, 68);
 	text-shadow: 1px 0 rgba(63, 63, 63, 0.2);
 }
@@ -301,8 +303,8 @@ body
 	display: inline-block;
 	padding: 30px;
 	padding-left: 1px;
-	color: rgb(50,120,227);
-	text-shadow: 1px 0 rgba(50,120,227, 0.3);
+	color: rgb(52,120,227);
+	text-shadow: 1px 0 rgba(52,120,227, 0.3);
 	font-size: 14px;
 }
 .readMore
@@ -312,7 +314,7 @@ body
 	width: 12px;
 	height: 12px;
 	border-radius: 12px;
-	background: rgb(50,120,227);
+	background: rgb(52,120,227);
 
 }
 .readMore div
@@ -334,7 +336,6 @@ body
 	height: 100%;
 	background: rgb(35,40,45);
 }
-
 #quoteContent
 {
 	color: white;
@@ -342,16 +343,19 @@ body
 	font-style: italic;
 	text-align: center;
 	padding:0 60px;
-
+	line-height: 27px;
 }
 #blockQuote .readMore
 {
 	margin-left:140px;
 }
-
+#blockQuote .readMore div
+{
+	border-color: rgb(35,40,45);
+}
 .fa-quote-left
 {
-	color:rgb(50,120,227);
+	color:rgb(52,120,227);
 	position: relative;
 	left:47%;
 	font-size: 22px;
@@ -359,9 +363,21 @@ body
 }
 #quoteCredit
 {
-
 	font-size: 14px;
 	text-align: center;
 	color: rgb(163, 163, 163);
 	margin-top:35px;
+}
+#loadMore
+{
+	display: block;
+	margin: auto;
+	height: 45px;
+	margin-bottom: 30px;
+	background: rgb(52,120,227);
+	border-color: rgb(52,120,227);
+	font-size: 14px;
+	padding: 15.5px auto;
+	text-align: center;
+	text-shadow: 1px 0 rgba(255, 255, 255, 0.3);
 }
