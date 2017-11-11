@@ -16,11 +16,14 @@ body
 	font-family: "helvetiNeue";
 	position: relative;
 }
-body::after {
+
+body:after {
 	content: '';
 	display: block;
 	height: 524px;
 }
+
+
 /*********************************************Header*********************************************/
 /*-----------------Top Header-------------*/
 #topHeader
@@ -256,39 +259,45 @@ body::after {
 {
 	font-family: "Segoe UI", sans-serif;
 	padding: 27px 30px 0 30px;
+	margin-bottom: 5px;
 	font-size: 20px;
 	line-height: 28px;
 	color:rgb(63, 65, 68);
 	text-shadow: 1px 0 rgba(63, 63, 63, 0.2);
 }
 
-.gridViewPost .gridViewPostContent ul
+.gridViewPost .gridViewPostContent .credit
 {
-	padding: 15px 30px 0 30px;
+	padding: 0 30px;
+	margin-bottom: 10px;
 	font-size: 12px;
 	color:rgb(163, 163, 163);
 }
-.gridViewPost .gridViewPostContent ul li
+.gridViewPost .gridViewPostContent .credit p
 {
 	display: inline-block;
-	margin-right: 18px;
+	margin: 0;
+	padding:0;
+	height: auto;
+	font-size: 12px;
+	color:rgb(163, 163, 163);
 }
-.gridViewPost .gridViewPostContent ul li:after
+/*.gridViewPost .gridViewPostContent .credit li:after
 {
 	display: inline-block;
 	content:'/';
 	position:absolute;
 	margin:0 9px;
 }
-.gridViewPost .gridViewPostContent ul li:last-child:after
+.gridViewPost .gridViewPostContent .credit li:last-child:after
 {
 	display: none;
-}
+}*/
 
 .gridViewPost .gridViewPostContent p
 {
 	line-height: 24.5px;
-	padding: 13px 30px 0 30px;
+	padding: 0 30px 0 30px;
 	font-size: 14px;
 	color: rgb(127, 126, 126);
 	text-shadow: 1px 0 rgba(127, 126, 126, 0.2);
@@ -536,4 +545,10 @@ body::after {
 #payment ul a:first-child li
 {
 	margin-left:162.5px;
+}
+
+.hoverOverMe:hover h2,.hoverOverMe:hover li, .hoverOverMe:hover p, .hoverOverMe:hover a
+{
+	color: rgb(52,120,227)!important;
+	transition-duration: 0.3s;
 }
