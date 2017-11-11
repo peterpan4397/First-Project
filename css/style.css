@@ -312,6 +312,7 @@ body::after {
 	border-radius: 12px;
 	background: rgb(52,120,227);
 
+
 }
 .readMore div
 {
@@ -342,9 +343,12 @@ body::after {
 #blockQuote .readMore
 {
 	margin-left:140px;
+	background: rgb(52,120,227);
+
 }
 #blockQuote .readMore div
 {
+	background: rgb(52,120,227);
 	border-color: rgb(35,40,45);
 }
 .fa-quote-left
