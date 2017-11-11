@@ -8,7 +8,7 @@
 .wrapper
 {
 	margin-left: 6.67%;
-	margin-right: 5.67%;
+	margin-right: 4.4%;
 }
 
 body
@@ -111,7 +111,8 @@ body::after {
 	border-bottom: 0.5px solid rgba(63, 63, 63, 0.2);
 
 }
-#leftNavBar li
+
+#leftNavBar a li
 {
 	display: inline-block;
 	padding: 10px 56px 13px 0;
@@ -225,7 +226,7 @@ body::after {
 }
 .gridViewPost
 {
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 }
 .gridViewPost img
@@ -240,14 +241,7 @@ body::after {
 	margin-left: -15px;
 
 }
-.secondCol
-{
-	margin-left: -7.5px;
-}
-.thirdCol
-{
-	margin-left: 15px;
-}
+
 
 .gridViewPost .gridViewPostContent
 {
@@ -332,10 +326,8 @@ body::after {
 	transform: rotate(45deg);
 }
 /*-------Block Quote---------*/
-#blockQuote
+#blockQuote div
 {
-	max-width: 100%;
-	height: 100%;
 	background: rgb(35,40,45);
 }
 #quoteContent
@@ -395,8 +387,9 @@ body::after {
 
 #leftCol
 {
-	padding: 82px 15px 0 15px;
+	padding: 82px 30px 0 0;
 }
+
 
 #leftCol img
 {
@@ -421,15 +414,18 @@ body::after {
 	text-align:center;
 	font-size: 16px;
 	padding-top: 9.5px;
+	margin-right: 10px;
 }
 
-#midCol
+#midCol div
 {
-	padding-top:88px;
+	margin-left: -15px;
 }
 
-#midCol h2, #rightCol h2
+#midCol h2
 {
+	padding-top: 88px;
+	margin-left: -15px;
 	font-size: 15px;
 	font-weight: bold;
 	color:white;
@@ -442,15 +438,24 @@ body::after {
 	line-height: 24.5px;
 }
 
-#rightCol
+#rightCol div
 {
-	padding:88px 15px 0 30px;
+	margin-left: -15px;
 	color:white;
 }
 #rightCol p
 {
-	font-size: 13px;
+	font-size: 14px;
 	margin-bottom: 32px;
+}
+
+#rightCol h2
+{
+	padding-top: 88px;
+	font-size: 15px;
+	font-weight: bold;
+	color:white;
+	margin-bottom: 43px;
 }
 
 #emailForm
@@ -493,10 +498,14 @@ body::after {
 	font-size: 14px;
 	margin-top: 42px;
 	margin-bottom: 38px;
+	margin-left: -15px;
 	padding-top: 46px;
 	border-top: 1px solid rgb(53, 61, 68);
 }
-
+#payment div
+{
+	margin-right: 15px;
+}
 
 #payment ul
 {
@@ -518,5 +527,5 @@ body::after {
 
 #payment ul a:first-child li
 {
-	margin-left: 184px;
+	margin-left:162.5px;
 }
