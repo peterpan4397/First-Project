@@ -340,6 +340,10 @@ body::after {
 	padding:0 60px;
 	line-height: 27px;
 }
+#outerQuote
+{
+	padding-bottom: 109px;
+}
 #blockQuote .readMore
 {
 	margin-left:140px;
