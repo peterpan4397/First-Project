@@ -22,7 +22,11 @@ body:after {
 	display: block;
 	height: 524px;
 }
-
+.hoverOverMe:hover
+{
+	color: rgb(52,120,227)!important;
+	transition-duration: 0.3s;
+}
 
 /*********************************************Header*********************************************/
 /*-----------------Top Header-------------*/
@@ -115,15 +119,19 @@ body:after {
 
 }
 
-#leftNavBar a li
+#leftNavBar li
 {
 	display: inline-block;
 	padding: 10px 56px 13px 0;
+	
+}
+#leftNavBar li a
+{
 	text-shadow: 1px 0 rgba(63, 63, 63, 0.2);
 	color:rgba(63, 63, 63, 0.8);
 }
 /*******This is weird**********/
-#navBar ul a:nth-child(8) li
+#navBar ul li:nth-child(8)
 {
 	padding-right: 0px;
 	color:black;
@@ -141,9 +149,19 @@ body:after {
 	margin-left: 13px;
 	transform: rotate(135deg);
 }
+#leftNavBar li:hover a
+{
+	color: rgb(52,120,227)!important;
+	transition-delay: 0.5s;
+	transition-duration: 0.3s;
+}
+#leftNavBar li:hover:after
+{
+	border-color: rgb(52,120,227)!important;
+	transition-duration: 0.3s;
+}
 #rightNavBar
 {
-	
 	margin-left:273px;
 	width: auto;
 	font-size: 14px;
@@ -202,6 +220,11 @@ body:after {
 	margin-right: 8px;
 
 }
+#gridViewTitle ul li a
+{
+	font-size: 14px;
+	color:rgba(63, 63, 63, 0.6);
+}
 #gridViewTitle ul li:last-child:after
 {
 	display: none;
@@ -257,42 +280,30 @@ body:after {
 }
 .gridViewPost .gridViewPostContent h2
 {
-	font-family: "Segoe UI", sans-serif;
 	padding: 27px 30px 0 30px;
 	margin-bottom: 5px;
+}
+.gridViewPost .gridViewPostContent h2 a
+{
+	font-family: "Segoe UI", sans-serif;
 	font-size: 20px;
 	line-height: 28px;
 	color:rgb(63, 65, 68);
 	text-shadow: 1px 0 rgba(63, 63, 63, 0.2);
 }
 
-.gridViewPost .gridViewPostContent .credit
+.gridViewPost .gridViewPostContent .credit p
 {
 	padding: 0 30px;
 	margin-bottom: 10px;
 	font-size: 12px;
 	color:rgb(163, 163, 163);
 }
-.gridViewPost .gridViewPostContent .credit p
+.gridViewPost .gridViewPostContent .credit p a
 {
-	display: inline-block;
-	margin: 0;
-	padding:0;
-	height: auto;
 	font-size: 12px;
 	color:rgb(163, 163, 163);
 }
-/*.gridViewPost .gridViewPostContent .credit li:after
-{
-	display: inline-block;
-	content:'/';
-	position:absolute;
-	margin:0 9px;
-}
-.gridViewPost .gridViewPostContent .credit li:last-child:after
-{
-	display: none;
-}*/
 
 .gridViewPost .gridViewPostContent p
 {
@@ -302,7 +313,7 @@ body:after {
 	color: rgb(127, 126, 126);
 	text-shadow: 1px 0 rgba(127, 126, 126, 0.2);
 }
-/*Is it a not considered a real element?****/
+
 .gridViewPost .gridViewPostContent a p, #blockQuote a p
 {
 	display: inline-block;
@@ -448,7 +459,7 @@ body:after {
 	color:white;
 	margin-bottom: 43px;
 }
-#midCol li
+#midCol li a
 {
 	font-size: 14px;
 	color: rgb(158, 158, 158);
@@ -538,17 +549,16 @@ body:after {
 {
 	display: inline-block;
 	margin-top:42px;
+}
+
+#payment ul li a
+{
 	font-size: 14px;
 	color: rgb(158, 158, 158);
 }
 
-#payment ul a:first-child li
+#payment ul li:first-child
 {
 	margin-left:162.5px;
 }
 
-.hoverOverMe:hover h2,.hoverOverMe:hover li, .hoverOverMe:hover p, .hoverOverMe:hover a
-{
-	color: rgb(52,120,227)!important;
-	transition-duration: 0.3s;
-}
