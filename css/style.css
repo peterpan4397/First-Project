@@ -219,6 +219,7 @@ body:after {
 {
 	display:block;
 }
+
 .listStyle1
 {
 	left:-31px;
@@ -248,6 +249,10 @@ body:after {
 {
 	margin-bottom: 0px;
 }
+#Home .listStyle1
+{
+	left:0;
+}
 #Shop:hover #sShop
 {
 	display:block;
@@ -260,14 +265,41 @@ body:after {
 {
 	display:block;
 }
+#Template:hover #sTemplate
+{
+	display:block;
+}
 .listStyle2
 {
-	width: 1173px;
-	left:-196px;
+	width: 1172px;
 	padding: 37px 0 32px 50px;
+}
+#Blog .listStyle2
+{
+	left:-196px;
 	background-image: url(../img/menubg.jpg);
 	background-repeat: no-repeat;
 	background-position: right bottom;
+}
+#Blog .listStyle2 .listStyle2Item
+{
+	margin-right: 90px;
+
+}
+#Template .listStyle2
+{
+	left:-287px;
+	min-height: 439px;
+}
+
+#Template .listStyle2 .listStyle2Item
+{
+	margin-right: 125px;
+}
+#sale
+{
+	position: absolute;
+	right: 20px;
 }
 .listStyle2 a
 {
@@ -285,13 +317,7 @@ body:after {
 {
 	/*If using display inline-block right here it will be given an extra space before the first column*/
 	float: left;
-	width: 145px;
-	margin-right: 90px;
-
-}
-.listStyle2 .listStyle2Item:first-child
-{
-	
+	min-width: 145px;
 }
 /*********************************************Body*********************************************/
 /*-----------------Grid View Title-------------*/
