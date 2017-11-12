@@ -119,24 +119,23 @@ body:after {
 
 }
 
-#leftNavBar li
+#leftNavBar .topMenu
 {
 	display: inline-block;
-	padding: 10px 56px 13px 0;
-	
+	padding: 19px 56px 21px 0;
+	margin:-4px 0;
 }
-#leftNavBar li a
+#leftNavBar .topMenu a
 {
 	text-shadow: 1px 0 rgba(63, 63, 63, 0.2);
 	color:rgba(63, 63, 63, 0.8);
 }
 /*******This is weird**********/
-#navBar ul li:nth-child(8)
+#leftNavBar .topMenu
 {
-	padding-right: 0px;
-	color:black;
+	position: relative;
 }
-#leftNavBar li:after
+#leftNavBar .topMenu:after
 {
 	content: ' ';
 	position: absolute;
@@ -145,26 +144,28 @@ body:after {
 	border-top: 1px solid rgba(63, 63, 63, 0.8);
 	border-right: 1px solid rgba(63, 63, 63, 0.8);
 	box-shadow: 1px 0 rgba(63, 63, 63, 0.2);
-	margin-top: 4px;
-	margin-left: 13px;
+	right:38px;
+	top:22px;
 	transform: rotate(135deg);
 }
-#leftNavBar li:hover a
+#leftNavBar .topMenu:hover .topMenuItem
 {
 	color: rgb(52,120,227)!important;
 	transition-delay: 0.5s;
 	transition-duration: 0.3s;
 }
-#leftNavBar li:hover:after
+#leftNavBar .topMenu:hover:after
 {
 	border-color: rgb(52,120,227)!important;
 	transition-duration: 0.3s;
 }
 #rightNavBar
 {
-	margin-left:273px;
+	margin-right: 35px;
+	margin-top: 8px;
 	width: auto;
 	font-size: 14px;
+	float: right;
 }
 #rightNavBar:after
 {
@@ -173,6 +174,7 @@ body:after {
 #search, #shopping i
 {
 	display: inline-block;
+	color:rgba(63,63,63, 1)!important;
 }
 #shopping
 {
@@ -186,10 +188,110 @@ body:after {
 	height: 24px;
 	border-radius: 24px;
 	background: #3478e3;
-	color:white;
 	text-align: center;
 	padding-top: 4.5px;
 	margin-left: 10px;
+}
+#nItem a
+{
+	display: block;
+	color:white!important;
+}
+.subMenu a
+{
+	font-size: 15px;
+	text-shadow: 1px 0 rgba(127, 126, 126, 0.2);
+	color:rgba(127, 126, 126, 1)!important;
+}
+
+.subMenu
+{
+	min-width: 220px;
+	position: absolute;
+	display:none;
+	top:50px;
+	background: white;
+	border-bottom: 3px solid rgba(52,120,227, 1);
+	box-shadow: -2px 0 8px -2px rgba(63, 63, 63, 0.5), 2px 0 8px -2px rgba(63, 63, 63, 0.3);
+	z-index: 100;
+}
+#Home:hover #sHome
+{
+	display:block;
+}
+.listStyle1
+{
+	left:-31px;
+	padding: 30px 30px 25px 30px;
+}
+.listStyle1 li
+{
+	border-bottom: 1px solid rgba(63, 63, 63, 0.2);
+	width: 100%;
+}
+.listStyle1 li a
+{
+	display: block;
+	width: max-content;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.listStyle1 li:first-child a
+{
+	margin-top: 0px;
+}
+.listStyle1 li:last-child
+{
+	border:none;
+}
+.listStyle1 li:last-child a
+{
+	margin-bottom: 0px;
+}
+#Shop:hover #sShop
+{
+	display:block;
+}
+#Blog:hover #sBlog
+{
+	display:block;
+}
+#Portfolio:hover #sPortfolio
+{
+	display:block;
+}
+.listStyle2
+{
+	width: 1173px;
+	left:-196px;
+	padding: 37px 0 32px 50px;
+	background-image: url(../img/menubg.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+.listStyle2 a
+{
+	min-width: 145px;
+	display: block;
+	line-height: 19.5px;
+	margin-top: 30px;
+}
+.listStyle2 h2 a
+{
+	margin-top: 0;
+	color: rgb(63,63,63)!important;
+}
+.listStyle2 .listStyle2Item
+{
+	/*If using display inline-block right here it will be given an extra space before the first column*/
+	float: left;
+	width: 145px;
+	margin-right: 90px;
+
+}
+.listStyle2 .listStyle2Item:first-child
+{
+	
 }
 /*********************************************Body*********************************************/
 /*-----------------Grid View Title-------------*/
@@ -259,7 +361,6 @@ body:after {
 {
 	width: 100%;
 	height: 220px;
-
 }
 
 .firstCol
